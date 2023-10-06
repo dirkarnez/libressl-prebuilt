@@ -74,7 +74,7 @@ jobs:
         shell: msys2 {0}
         run: |
             workspace=$(pwd) &&
-            export PATH="$workspace/mingw64:$workspace/mingw64/bin:$workspace/cmake-3.24.0-windows-x86_64/bin:$workspace/msys64/usr/bin:/usr/bin" &&
+            export PATH="$workspace/mingw64:$workspace/mingw64/bin:$workspace/cmake-3.24.0-windows-x86_64/bin:$workspace/PortableGit-2.38.1-64-bit/bin:$workspace/msys64/usr/bin:/usr/bin" &&
             cd "${{ env.libraryName }}" && 
             g++ --version && 
             ./autogen.sh && \
