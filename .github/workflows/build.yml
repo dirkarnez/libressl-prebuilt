@@ -70,7 +70,8 @@ jobs:
         shell: cmd
         run: curl https://github.com/git-for-windows/git/releases/download/v2.38.1.windows.1/PortableGit-2.38.1-64-bit.7z.exe -L --output PortableGit-2.38.1-64-bit.7z.exe && dir && 7z.exe x PortableGit-2.38.1-64-bit.7z.exe -o"PortableGit-2.38.1-64-bit"
 
-      - run: |
+      - shell: cmd
+        run: |
           curl https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.8.1.tar.gz -L -O &&^
           .\PortableGit-2.38.1-64-bit\usr\bin\tar.exe -zxvf libressl-3.8.1.tar.gz &&^
           rename libressl-3.8.1 libressl
