@@ -46,7 +46,7 @@ jobs:
         uses: msys2/setup-msys2@v2
         with:
           msystem: MINGW64
-          install: make autoconf automake libtool autogen perl diffutils patch
+          install: make autoconf automake libtool autogen perl diffutils patch git
           
       - uses: actions/checkout@v4
         with:
